@@ -14,9 +14,9 @@
 		<fieldset>
 			<legend><?php echo __d('users', 'Edit User'); ?></legend>
 			<?php
-				echo $this->Form->input('UserDetail.first_name');
-				echo $this->Form->input('UserDetail.last_name');
-				echo $this->Form->input('UserDetail.birthday');
+				echo $this->Form->input('UserDetail.first_name', array('value' => $this->request->data('UserDetail.User.first_name')));
+				echo $this->Form->input('UserDetail.last_name', array('value' => $this->request->data('UserDetail.User.last_name')));
+				echo $this->Form->input('UserDetail.birthday', array('value' => $this->request->data('UserDetail.User.birthday')));
 			?>
 			<p>
 				<?php echo $this->Html->link(__d('users', 'Change your password'), array('action' => 'change_password')); ?>
