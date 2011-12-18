@@ -98,8 +98,8 @@ class UsersController extends UsersAppController {
  * @return void
  */	
 	protected function _setupHelpers() {
-		if (App::import('Helper', 'Goodies.Gravatar')) {
-			$this->helpers[] = 'Goodies.Gravatar';
+		if (App::import('Helper', 'Utils.Gravatar')) {
+			$this->helpers[] = 'Utils.Gravatar';
 		}
 	}
 
